@@ -12,3 +12,10 @@ df -h /
 echo
 echo "----- Memory -----"
 free -h
+
+echo
+echo "----- CPU -----"
+top -bn1 | grep "Cpu(s)"
+echo
+echo "----- Logged-in Users -----"
+who
