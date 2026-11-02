@@ -19,3 +19,11 @@ top -bn1 | grep "Cpu(s)"
 echo
 echo "----- Logged-in Users -----"
 who
+
+echo
+USAGE=$(df / | awk 'NR==2 {print $5}' | tr -d '%')
+if [ "$USAGE" -ge 80 ]; then
+    echo "[WARNING] Disk usage: ${USAGE}%"
+else
+    echo "[OK] Disk usage: ${USAGE}%"
+fi
