@@ -12,6 +12,7 @@
 ```bash
 chmod +x monitor.sh
 ./monitor.sh
+./monitor.py
 ```
 
 결과를 파일로 저장하려면 다음과 같이 실행합니다.
@@ -26,7 +27,7 @@ mkdir -p logs
 
 ## 로드맵
 - [x] 1단계: 쉘 스크립트로 서버 상태 출력
-- [ ] 2단계: Python으로 재작성, 설정은 YAML로 분리
+- [x] 2단계: Python으로 재작성, 설정은 YAML로 분리
 - [ ] 3단계: SSH로 여러 VM 상태 수집
 - [ ] 4단계: 수집 결과 DB 저장
 
