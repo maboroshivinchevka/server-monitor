@@ -1,0 +1,6 @@
+# Server Monitor settings
+disk:
+  path: /
+  warning_percent: 80
+memory:
+  warning_percent: 90
